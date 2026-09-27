@@ -300,3 +300,12 @@ p, figcaption, dd, summary { text-wrap: pretty; }
 
 .method-steps li, .method-steps .step-copy, .method-steps .prose { min-width: 0; }
 .results-section > .prose { margin-block: 24px; }
+
+/* Figures carry the argument on this page: image grids and the method diagram
+   extend past the 820px text track to the frame, text stays on the track. */
+@media (min-width: 1101px) {
+  .bleed-figure { margin-inline: -86px; }
+  .bleed-figure figcaption { margin-inline: 86px; }
+}
+.key-figure .figure-image { padding: 18px 20px; }
+.key-figure img { cursor: zoom-in; }
