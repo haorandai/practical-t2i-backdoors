@@ -1,28 +1,33 @@
-# T2I Backdoors project website
+# Practical, Generalizable and Robust Backdoor Attacks on Text-to-Image Diffusion Models
 
-**Practical, Generalizable and Robust Backdoor Attacks on Text-to-Image Diffusion Models**
+**Project page:** [haorandai.com/practical-t2i-backdoors](https://haorandai.com/practical-t2i-backdoors/) · **Paper:** [arXiv 2508.01605](https://arxiv.org/abs/2508.01605) · **Code:** [haorandai/backdoorT2I](https://github.com/haorandai/backdoorT2I)
 
-- Paper record: https://openreview.net/forum?id=9XkxVFcAnd
-- Displayed status: Manuscript · Submitted to AAAI 2027
-- Public website: https://haorandai.com/practical-t2i-backdoors/
-- Website repository: https://github.com/haorandai/practical-t2i-backdoors
+A backdoor attack on text-to-image diffusion models that uses natural, readable trigger prompts and CLIP-guided image preparation, transfers across diffusion model families, and evades current defenses. This repository holds the source of the project page.
 
-## Preview and edit
+## Citation
 
-Run `python3 -m http.server 8000` in this directory, then open `http://localhost:8000`.
+```bibtex
+@misc{dai2025practical,
+  title = {Practical, Generalizable and Robust Backdoor Attacks on Text-to-Image Diffusion Models},
+  author = {Haoran Dai and Jiawen Wang and Ruo Yang and Manali Sharma and Zhonghao Liao and Yuan Hong and Binghui Wang},
+  year = {2025},
+  eprint = {2508.01605},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CR},
+  url = {https://arxiv.org/abs/2508.01605}
+}
+```
 
-Edit `index.html` for prose, author metadata, tables and LaTeX; `styles.css` for layout; and `script.js` for math rendering and citation copying. Keep the inline citation synchronized with `citation.bib`.
+## Editing the page
 
-KaTeX 0.18.9, fonts and license are self-hosted in `assets/vendor/katex`. Use inline `\(...\)` and display `\[...\]` math. Run `node scripts/check-math.cjs` after equation edits. The site has no build step or package installation.
+The site is static: no build step or package installation.
 
-## Evidence and attribution
+- Preview with `python3 -m http.server 8000`, then open `http://localhost:8000`.
+- `index.html` holds the prose, author list, tables and LaTeX; `styles.css` the layout; `script.js` math rendering and citation copying. Keep the inline citation in sync with `citation.bib`.
+- KaTeX is self-hosted in `assets/vendor/katex`. Use `\(...\)` for inline and `\[...\]` for display math, and run `node scripts/check-math.cjs` after editing equations.
 
-Content follows the exact PDF linked from the supplied OpenReview record. Numerical comparisons are manuscript-reported results, not an independent reproduction. Figure crops preserve the original panels and labels. Citation for the public arXiv preprint. The results above follow the linked OpenReview manuscript.
+GitHub Pages serves the root of `main`.
 
-Authors and status were verified against the record on September 26, 2026. No equal-contribution or corresponding-author marks were inferred from author order.
+## Credits
 
-The underlying paper and figures belong to their authors. The OpenReview record specifies CC BY 4.0. Page design adapts the authors' OASIS project page. Geist is loaded from Google Fonts with system fallbacks. No source manuscript, private reviews, research checkpoints, or private repository contents are included.
-
-## Hosting
-
-GitHub Pages serves the root of `main`; `.nojekyll` enables direct static-file serving. Asset paths are relative. This website repository is independent of the research-code repository and the personal homepage. Verify deployment status and the public URL after pushing updates.
+The paper and its figures belong to the authors and are shared under CC BY 4.0, as stated on the OpenReview record. Numbers on the page are the ones reported in the paper, not an independent reproduction.
