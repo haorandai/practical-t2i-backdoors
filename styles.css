@@ -71,7 +71,7 @@ h1 { margin: 28px auto 26px; font-size: clamp(44px, 5.4vw, 72px); line-height: 1
 .result-highlights article { padding-right: 30px; }
 .result-highlights article + article { padding-left: 48px; padding-right: 0; border-left: 1px solid var(--line); }
 .metric-label { font-size: 14px; line-height: 1.6; }
-.metric-label > span { display: block; font-size: 12px; color: var(--muted); margin-top: 3px; }
+.metric-label > span:last-child { display: block; font-size: 12px; color: var(--muted); margin-top: 3px; }
 .metric-values { display: flex; gap: 18px; align-items: baseline; white-space: nowrap; font-size: clamp(32px, 3.8vw, 51px); line-height: 1.2; letter-spacing: -.07em; margin: 25px 0 22px; font-variant-numeric: tabular-nums; }
 .metric-values strong { font-weight: 450; }
 .metric-before { color: #828282; }
@@ -314,3 +314,10 @@ p, figcaption, dd, summary { text-wrap: pretty; }
 .clip-figure { margin-top: 36px; }
 .clip-figure .figure-image { padding: 20px 28px; }
 .method-steps-cont { margin-top: 12px; }
+
+/* Attack-success table: model name once per group of three rows. */
+.table-wrap td.model-cell, .table-wrap th.model-cell { vertical-align: top; }
+/* BibTeX wraps instead of running off the card. */
+#bibtex { white-space: pre-wrap; word-break: break-word; }
+/* Keep-together spans in captions should not look emphasized. */
+.paper-figure figcaption span.nw { color: inherit; }

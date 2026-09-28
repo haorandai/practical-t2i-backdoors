@@ -2,7 +2,7 @@
 
 **Project page:** [haorandai.com/practical-t2i-backdoors](https://haorandai.com/practical-t2i-backdoors/) · **Paper:** [arXiv 2508.01605](https://arxiv.org/abs/2508.01605) · **Code:** [haorandai/backdoorT2I](https://github.com/haorandai/backdoorT2I)
 
-A backdoor attack on text-to-image diffusion models that uses natural, readable trigger prompts and CLIP-guided image preparation, transfers across diffusion model families, and evades current defenses. This repository holds the source of the project page.
+A backdoor attack on text-to-image diffusion models that uses natural, readable trigger prompts and CLIP-guided image preparation. It is evaluated on SD 1.4, SDXL and FLUX.1, each fine-tuned separately, and against several existing defenses. This repository holds the source of the project page.
 
 ## Citation
 
