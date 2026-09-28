@@ -309,3 +309,8 @@ p, figcaption, dd, summary { text-wrap: pretty; }
 }
 .key-figure .figure-image { padding: 18px 20px; }
 .key-figure img { cursor: zoom-in; }
+
+/* Figure 3 (CLIP latent space) sits on the text track, below the three phases. */
+.clip-figure { margin-top: 36px; }
+.clip-figure .figure-image { padding: 20px 28px; }
+.method-steps-cont { margin-top: 12px; }
