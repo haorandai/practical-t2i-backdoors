@@ -30,4 +30,4 @@ GitHub Pages serves the root of `main`.
 
 ## Credits
 
-The paper and its figures belong to the authors and are shared under CC BY 4.0, as stated on the OpenReview record. Numbers on the page are the ones reported in the paper, not an independent reproduction.
+Every result and figure on the page comes from the arXiv preprint (v1), which the authors distribute under CC BY-NC-ND 4.0; figures are reproduced with attribution. Numbers are the ones reported in the paper, not an independent reproduction.
